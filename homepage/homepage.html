@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Netflix</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Home</title>
+    <link rel="stylesheet" href="./homepage.css" />
+    <style>
+        .movie {
+          border: 1px solid #ddd;
+          padding: 10px;
+          margin: 10px 0;
+          display: flex;
+          align-items: flex-start;
+        }
+        .poster {
+          width: 100px;
+          height: auto;
+          margin-right: 15px;
+        }
+        .movie h3 {
+          margin: 0;
+        }
+        .movie button {
+          margin-top: 5px;
+        }
+      </style>
+  </head>
+  <body class="home_body">
+    <header id="home_header" class="home_header">
+      <nav>
+        <div>
+          <h1>Netflix</h1>
+        </div>
+        <div>
+          <ul class="nav_ul">
+            <li>Home</li>
+            <li>Movies</li>
+            <li>Tv shows</li>
+            <li>My list</li>
+          </ul>
+        </div>
+      </nav>
+      <h1>TMDb API - Mashhur kinolar</h1>
+      <div id="moviesContainer">Loading...</div>
+    </header>
+    <script src="../js/main.js"></script>
+  </body>
 </html>
