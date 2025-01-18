@@ -1,0 +1,123 @@
+body{
+    background-color: #2b2a2a;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.plan_box{
+    color: white;   
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: center;
+}
+.pricing-container{
+    display: flex;
+    gap: 20px;
+    padding: 50px 0px;
+    justify-content: center;
+}
+.pricing-header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.pricing-price{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #2ecc71;
+    margin: 10px 0;
+}
+.pricing-card{
+    background-color: #242424;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+}
+.pricing-card:hover{
+    transform: scale(1.05);
+}
+.pricing-features li{
+   font-size: 20px;
+   color: white;
+}
+.pricing-features li span {
+    font-size: 15px;
+    color: rgb(196, 193, 193);
+ }
+.pricing-button{
+    display: flex;
+    justify-content: center;
+    background-color: #db0c0c;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+    border: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.pricing-button:hover {
+    background-color: #ff0000;
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0px;    
+    margin-top: 50px;
+}
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0;
+}
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: #fff;
+}
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 75%;
+}
+footer .social-icons a img:hover{
+    transform: scale(1.35);
+}
+footer .language-switcher {
+    text-align: center;
+    margin-top: 20px;
+}
+footer .language-switcher a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer .language-switcher a:hover {
+    color: #fff;
+}
