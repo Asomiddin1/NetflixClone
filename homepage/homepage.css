@@ -125,9 +125,9 @@ body {
 
 .joker_div{
   height: 500px;
-  width: 100vw;
+  width: 97%;
   border-radius: 20px;
-  background-image: url('https://avatars.mds.yandex.net/i?id=184a301ccb43e463167a1f30bab93b6b_l-4615646-images-thumbs&n=13');
+  background-image: url('./img/3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -281,8 +281,42 @@ body {
     transform: translateX(-20px);
 }
 
+.popular_container{
+  padding: 30px;
+}
+
+#popular-box{
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#popular-box div{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#popular-box div h1{
+  font-size: 18px;
+  text-align: center;
+}
+
+#popular-box div img{
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  margin-bottom: 10px;
+}
+#popular-box div img:hover{
+  transform: scale(1.2);
+}
 @media only screen and (max-width: 940px){
     .menu-container{
         display: none;
     }
 }
+
