@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_one_movie{
+   margin-left: 60px;
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+}
+
+.one_movie_img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.one_movie_details{
+    padding: 10px 20px;
+
+}

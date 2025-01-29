@@ -17,12 +17,14 @@ const getMovieFunc =async ()=>{
           console.log(data);
           data.map(c =>{
             popularBox.innerHTML += `
-            <div>
-                <img width="200px" src="${c.img}" alt="">
-                <div>
+            <div class='card_popular'>
+                <div class='img-container_popular'>
+                   <img  src="${c.img}" alt="">
+                </div>
+                <div class='card_title_popular'>
                  <h1>${c.title}</h1>
                  <p></p>
-                </div>
+               </div>
             </div>
             `
           })
