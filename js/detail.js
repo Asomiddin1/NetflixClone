@@ -1,7 +1,6 @@
 const oneMovieBox = document.getElementById('container_one_movie')
 const videoBox = document.getElementById('video_box')
 
-
 const getOneMovie =async ()=>{
     const url = "https://raw.githubusercontent.com/Asomiddin1/Movie-Api/refs/heads/main/movie.json";
     try {
@@ -22,8 +21,10 @@ const getOneMovie =async ()=>{
       })
       console.log(newData);
       oneMovieBox.innerHTML = `
-      <div>
+           <div class='one_movie_box'>
+            <div class='one_movie_img_box'>
                 <img class="one_movie_img" src="${newData[0].img}" alt="">
+                <button id='btn_play' class="btn_play">Play</button>
             </div>
             <div class="one_movie_details">
                 <h1 style="margin-bottom: 20px;">${newData[0].title}</h1>
@@ -36,9 +37,20 @@ const getOneMovie =async ()=>{
                 ${newData[0].description}
                 </p>
             </div>
+           </div>
       `;
+ 
 
-      videoBox.innerHTML = `<video autoplay src="${newData[0].url}" controls></video>`
+      videoBox.innerHTML = `<iframe width="100%" height="415" 
+            src="https://www.youtube.com/embed/${newData[0].trailer}?autoplay=1&mute=0&controls=0&showinfo=0&modestbranding=1" 
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        ` 
+      
+    document.getElementById('btn_play').addEventListener('click' , ()=>{
+      videoBox.innerHTML = ` <video src="${newData[0].url}" controls="" autoplay></video>`
+    })
+  
       
 
     } catch (error) {

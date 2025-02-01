@@ -122,15 +122,12 @@ body {
   color: white;
 }
 
-.content-container {
-  margin-left: 50px;
-}
 
 .joker_div{
   height: 500px;
   width: 97%;
   border-radius: 20px;
-  background-image: url('../images/3.jpg');
+  background-image: url('https://images2.alphacoders.com/105/1050310.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 30px;
