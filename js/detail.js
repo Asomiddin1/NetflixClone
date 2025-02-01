@@ -1,5 +1,6 @@
 const oneMovieBox = document.getElementById('container_one_movie')
 const videoBox = document.getElementById('video_box')
+const mobileDesc = document.getElementById('mobile_desc')
 
 const getOneMovie =async ()=>{
     const url = "https://raw.githubusercontent.com/Asomiddin1/Movie-Api/refs/heads/main/movie.json";
@@ -46,6 +47,8 @@ const getOneMovie =async ()=>{
             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
         ` 
+
+        mobileDesc.innerHTML = `${newData[0].description}`
       
     document.getElementById('btn_play').addEventListener('click' , ()=>{
       videoBox.innerHTML = ` <video src="${newData[0].url}" controls="" autoplay></video>`

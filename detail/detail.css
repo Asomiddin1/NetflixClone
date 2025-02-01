@@ -45,7 +45,7 @@
     color: white;
 }
 
-.mobile_desc{
+#mobile_desc{
     display: none;
 }
 
@@ -56,14 +56,19 @@
         width: 180px;
     }
     .one_movie_details{
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .mobile_desc{
+    #mobile_desc{
         display: block;
         padding: 5px 10px;
     }
     .pc_desc{
         display: none;
+    }
+
+    .video_box video {
+        width: 100%;
+        height: 300px;
     }
 }
