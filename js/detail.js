@@ -33,7 +33,7 @@ const getOneMovie =async ()=>{
                 <h3>Качество : ${newData[0].quality} , ${newData[0].translate}</h3>
                 <h3>${newData[0].ageLimit}</h3>
                 <h3>Жанры : ${newData[0].genre}</h3>
-                <p style="margin-top: 10px; max-width: 570px;">
+                <p class='pc_desc' style="margin-top: 10px; max-width: 570px;">
                 ${newData[0].description}
                 </p>
             </div>
