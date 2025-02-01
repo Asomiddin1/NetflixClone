@@ -17,9 +17,9 @@ const getMovieFunc =async ()=>{
           console.log(data);
           data.map(c =>{
             popularBox.innerHTML += `
-            <div class='card_popular'>
+            <div onclick="getMovieId(${c.views})" class='card_popular'>
                 <div class='img-container_popular'>
-                   <img  src="${c.img}" alt="">
+                  <a href="../detail/detail.html"><img  src="${c.img}" alt=""></a>
                 </div>
                 <div class='card_title_popular'>
                  <h1>${c.title}</h1>
@@ -34,4 +34,11 @@ const getMovieFunc =async ()=>{
       
 }
 
+
+
 getMovieFunc()
+
+
+let getMovieId = (oneMovie)=>{
+  localStorage.setItem('oneMovie' , oneMovie)
+}
